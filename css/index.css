@@ -1,0 +1,17 @@
+@import url("./global.css");
+
+
+
+
+
+.container {
+    width: 200px;
+    height: 200px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid red;
+}
