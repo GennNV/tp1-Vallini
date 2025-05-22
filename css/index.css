@@ -1,5 +1,12 @@
 @import url("./global.css");
 
+body {
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 footer {
     width: 100%;
     text-align: center;
@@ -34,7 +41,19 @@ footer {
 
 details {
     margin: 10px 0;
+    cursor: pointer;
+
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(244, 232, 193, 0.6);
 }
+
+summary {
+    cursor: pointer;
+
+}
+
 
 .mis,
 .vis,
@@ -42,10 +61,44 @@ details {
     font-size: 20px;
     color: var(--text-color);
     text-align: justify;
-
+    font-weight: 450;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 1;
 }
+
+
+details[open] .mis,
+details[open] .vis,
+details[open] .who {
+    max-height: 1000px;
+    opacity: 1;
+}
+
 
 h1,
 h2 {
     color: var(--sec-text-color);
+}
+
+.services {
+    max-width: 100%;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: rgba(244, 232, 193, 0.6);
+}
+
+.services h2 {
+    margin-top: 100px;
+    color: var(--sec-text-color);
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+li {
+    color: var(--text-color);
 }
