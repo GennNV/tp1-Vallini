@@ -4,7 +4,6 @@
 body {
     background-image: url("../imgs/bg.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -16,11 +15,12 @@ body {
     color: var(--text-color);
 }
 
-p {
+#description {
     text-align: center;
     color: var(--text-color);
     font-weight: bold;
 }
+
 
 form {
     width: 80%;
@@ -86,4 +86,9 @@ input[type="radio"] {
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
