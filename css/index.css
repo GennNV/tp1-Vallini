@@ -84,13 +84,13 @@ h2 {
 
 .services {
     max-width: 100%;
-    margin-top: 150px;
+    margin-top: 300px;
     padding: 20px;
     background-color: rgba(244, 232, 193, 0.6);
 }
 
 .services h2 {
-    margin-top: 100px;
+
     color: var(--sec-text-color);
 }
 
