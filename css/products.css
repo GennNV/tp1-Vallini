@@ -1,1 +1,10 @@
 @import url("./global.css");
+
+body {
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Card*/
