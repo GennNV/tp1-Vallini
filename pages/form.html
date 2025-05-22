@@ -21,7 +21,62 @@
             </ul>
         </nav>
     </header>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+    <h1 id="title">Looking for a flight?</h1>
+    <p id="description">* Required fields</p>
+    <form id="survey-form" method="get">
+        <fieldset>
+            <label id="nameLabel" for="name">Name *<input id="name" type="text" required
+                    placeholder="Enter your name" /></label>
+            <label id="emailLabel" for="email">Email *<input id="email" type="email" required
+                    placeholder="Enter your Email" /></label>
+            <label id="ageLabel" for="age">Age<input id="number" type="number" min="15" max="80"
+                    placeholder="Age" /></label>
+            <label id="phoneLabel" for="phone">Cell-phone<input id="phone" type="number"
+                    placeholder="Cell-phone" /></label>
+        </fieldset>
+        <fieldset>
+            <label id="dropdownLabel" for="dropdown">
+                What type of flight are you looking for? *
+                <select id="dropdown" name="flight" required>
+                    <option value="">Select an option</option>
+                    <option value="1">Local</option>
+                    <option value="2">National</option>
+                    <option value="3">International</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="radios" id="fTime">
+                <legend>Is your first time flying with us? *</legend>
+                <label for="yes"><input type="radio" name="recommend" id="yes" class="inline" checked value="yes"
+                        required>
+                    Yes</label>
+                <label for="no"><input type="radio" name="recommend" id="no" class="inline" value="no"
+                        required>No</label>
+        </fieldset>
 
+        </label>
+        <fieldset>
+            <label for="dropdown2">
+                Select your plane *
+                <select id="dropdown2" name="plane">
+                    <option value="">Select an option</option>
+                    <option value="1">Gulfstream G700</option>
+                    <option value="2">Cessna Citation Longitude</option>
+                    <option value="3">HondaJet Elite II</option>
+                    <option value="4">Dassault Falcon 8X</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comm">Any comments or extra information we need to know?
+                <textarea id="comm" name="comm" rows="6" cols="50" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
 
     <section class="contacto">
         <h2>Contact Us</h2>
