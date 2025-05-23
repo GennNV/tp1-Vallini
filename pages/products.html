@@ -10,137 +10,140 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/"><img src="../imgs/logo.png" alt="logo">FlyHigh</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./form.html">Form</a></li>
-                <li></li>
-            </ul>
-        </nav>
-        <div class="search-container">
-            <div class="search">
-                <input type="checkbox" id="toggle-search" class="toggle-search" hidden>
-                <label for="toggle-search" class="search__icon-label">
-                    <svg viewBox="0 0 24 24" class="search__icon">
-                        <g>
-                            <path
-                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                            </path>
-                        </g>
-                    </svg>
-                </label>
-                <input class="input" type="text" placeholder="Buscar...">
+    <main>
+        <!-- Header -->
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-li"><a href="/"><img src="../imgs/logo.png" alt="logo">FlyHigh</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./form.html">Form</a></li>
+                    <li class="spacer-li"></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <div class="search">
+                    <input type="checkbox" id="toggle-search" class="toggle-search" hidden>
+                    <label for="toggle-search" class="search__icon-label">
+                        <svg viewBox="0 0 24 24" class="search__icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </label>
+                    <input class="input" type="text" placeholder="Search...">
+                </div>
             </div>
-        </div>
-    </header>
-    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
-    <h2>Our Products</h2>
-    <section class="productRow">
-        <div class="productBox">
-            <h3>Gulfstream G700</h3>
-            <div class="products">
-                <div class="productCard"><img src="../imgs/product1/prod1-1.jpg" alt="Gulfstream G700"></div>
-                <div class="productCard"><img src="../imgs/product1/prod1-2.jpg" alt="Gulfstream G700"></div>
-                <div class="productCard"><img src="../imgs/product1/prod1-3.jpg" alt="Gulfstream G700"></div>
-                <div class="productCard"><img src="../imgs/product1/prod1-4.png" alt="Gulfstream G700"></div>
-                <div class="productCard"><img src="../imgs/product1/prod1-5.jpg" alt="Gulfstream G700"></div>
+        </header>
+        <!-- Products -->
+        <h2>Our Products</h2>
+        <section class="productRow">
+            <div class="productBox">
+                <h3>Gulfstream G700</h3>
+                <div class="products">
+                    <div class="productCard"><img src="../imgs/product1/prod1-1.jpg" alt="Gulfstream G700"></div>
+                    <div class="productCard"><img src="../imgs/product1/prod1-2.jpg" alt="Gulfstream G700"></div>
+                    <div class="productCard"><img src="../imgs/product1/prod1-3.jpg" alt="Gulfstream G700"></div>
+                    <div class="productCard"><img src="../imgs/product1/prod1-4.png" alt="Gulfstream G700"></div>
+                    <div class="productCard"><img src="../imgs/product1/prod1-5.jpg" alt="Gulfstream G700"></div>
+                </div>
+                <p class="productDesc">
+                    The Gulfstream G700 is an ultra-long-range, large-cabin private jet known for its luxury and
+                    capability
+                    for intercontinental flights...
+                </p>
+                <button class="btn"><a href="../pages/form.html">Book Now</a></button>
             </div>
-            <p class="productDesc">
-                The Gulfstream G700 is an ultra-long-range, large-cabin private jet known for its luxury and capability
-                for intercontinental flights...
-            </p>
-            <button class="btn"><a href="../pages/form.html">Book Now</a></button>
-        </div>
 
-        <div class="productBox">
-            <h3>Cessna Citation Longitude</h3>
-            <div class="products">
-                <div class="productCard"><img src="../imgs/product2/prod2-1.jpg" alt="Cessna Citation Longitude"></div>
-                <div class="productCard"><img src="../imgs/product2/prod2-2.webp" alt="Cessna Citation Longitude"></div>
-                <div class="productCard"><img src="../imgs/product2/prod2-3.jpg" alt="Cessna Citation Longitude"></div>
-                <div class="productCard"><img src="../imgs/product2/prod2-4.jpg" alt="Cessna Citation Longitude"></div>
-                <div class="productCard"><img src="../imgs/product2/prod2-5.jpeg" alt="Cessna Citation Longitude"></div>
+            <div class="productBox">
+                <h3>Cessna Citation Longitude</h3>
+                <div class="products">
+                    <div class="productCard"><img src="../imgs/product2/prod2-1.jpg" alt="Cessna Citation Longitude">
+                    </div>
+                    <div class="productCard"><img src="../imgs/product2/prod2-2.webp" alt="Cessna Citation Longitude">
+                    </div>
+                    <div class="productCard"><img src="../imgs/product2/prod2-3.jpg" alt="Cessna Citation Longitude">
+                    </div>
+                    <div class="productCard"><img src="../imgs/product2/prod2-4.jpg" alt="Cessna Citation Longitude">
+                    </div>
+                    <div class="productCard"><img src="../imgs/product2/prod2-5.jpeg" alt="Cessna Citation Longitude">
+                    </div>
+                </div>
+                <p class="productDesc">
+                    The Cessna Citation Longitude is a super-midsize business jet known for its range and comfort...
+                </p>
+                <button class="btn"><a href="../pages/form.html">Book Now</a></button>
+
             </div>
-            <p class="productDesc">
-                The Cessna Citation Longitude is a super-midsize business jet known for its range and comfort...
-            </p>
-            <button class="btn"><a href="../pages/form.html">Book Now</a></button>
+        </section>
+        <section class="productRow">
+            <div class="productBox">
+                <h3>HondaJet Elite II</h3>
+                <div class="products">
+                    <div class="productCard"><img src="../imgs/product3/prod3-1.jpg" alt="HondaJet Elite II"></div>
+                    <div class="productCard"><img src="../imgs/product3/prod3-2.jpg" alt="HondaJet Elite II"></div>
+                    <div class="productCard"><img src="../imgs/product3/prod3-3.jpg" alt="HondaJet Elite II"></div>
+                    <div class="productCard"><img src="../imgs/product3/prod3-4.avif" alt="HondaJet Elite II"></div>
+                    <div class="productCard"><img src="../imgs/product3/prod3-5.jpg" alt="HondaJet Elite II"></div>
+                </div>
+                <p class="productDesc">The HondaJet Elite II is a cutting-edge light jet that combines sleek design,
+                    efficiency, and advanced
+                    technology. Designed for short to mid-range trips, it offers impressive speed, fuel efficiency, and
+                    comfort in a compact form...
+                </p>
+                <button class="btn"><a href="../pages/form.html">Book Now</a></button>
 
-        </div>
-    </section>
-    <section class="productRow">
-        <div class="productBox">
-            <h3>HondaJet Elite II</h3>
-            <div class="products">
-                <div class="productCard"><img src="../imgs/product3/prod3-1.jpg" alt="HondaJet Elite II"></div>
-                <div class="productCard"><img src="../imgs/product3/prod3-2.jpg" alt="HondaJet Elite II"></div>
-                <div class="productCard"><img src="../imgs/product3/prod3-3.jpg" alt="HondaJet Elite II"></div>
-                <div class="productCard"><img src="../imgs/product3/prod3-4.avif" alt="HondaJet Elite II"></div>
-                <div class="productCard"><img src="../imgs/product3/prod3-5.jpg" alt="HondaJet Elite II"></div>
             </div>
-            <p class="productDesc">The HondaJet Elite II is a cutting-edge light jet that combines sleek design,
-                efficiency, and advanced
-                technology. Designed for short to mid-range trips, it offers impressive speed, fuel efficiency, and
-                comfort in a compact form...
-            </p>
-            <button class="btn"><a href="../pages/form.html">Book Now</a></button>
 
-        </div>
+            <div class="productBox">
+                <h3>Dassault Falcon 8X</h3>
+                <div class="products">
+                    <div class="productCard"><img src="../imgs/product4/prod4-1.webp" alt="Dassault Falcon 8X"></div>
+                    <div class="productCard"><img src="../imgs/product4/prod4-2.jpg" alt="Dassault Falcon 8X"></div>
+                    <div class="productCard"><img src="../imgs/product4/prod4-3.jpg" alt="Dassault Falcon 8X"></div>
+                    <div class="productCard"><img src="../imgs/product4/prod4-4.jpg" alt="Dassault Falcon 8X"></div>
+                    <div class="productCard"><img src="../imgs/product4/prod4-5.jpeg" alt="Dassault Falcon 8X"></div>
+                </div>
+                <p class="productDesc">
+                    The Falcon 8X is a long-range business jet known for its range, comfort, and ability to operate on
+                    short runways. It is an improved version of the Falcon 7X...
+                </p>
+                <button class="btn"><a href="../pages/form.html">Book Now</a></button>
 
-        <div class="productBox">
-            <h3>Dassault Falcon 8X</h3>
-            <div class="products">
-                <div class="productCard"><img src="../imgs/product4/prod4-1.webp" alt="Dassault Falcon 8X"></div>
-                <div class="productCard"><img src="../imgs/product4/prod4-2.jpg" alt="Dassault Falcon 8X"></div>
-                <div class="productCard"><img src="../imgs/product4/prod4-3.jpg" alt="Dassault Falcon 8X"></div>
-                <div class="productCard"><img src="../imgs/product4/prod4-4.jpg" alt="Dassault Falcon 8X"></div>
-                <div class="productCard"><img src="../imgs/product4/prod4-5.jpeg" alt="Dassault Falcon 8X"></div>
             </div>
-            <p class="productDesc">
-                The Falcon 8X is a long-range business jet known for its range, comfort, and ability to operate on
-                short runways. It is an improved version of the Falcon 7X...
-            </p>
-            <button class="btn"><a href="../pages/form.html">Book Now</a></button>
+        </section>
 
-        </div>
-    </section>
+        <!-- Contact Us -->
+        <section class="contacto">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <p><strong>Email:</strong> contact@flyhigh.com</p>
+                <p><strong>Phone:</strong> +1 (800) 555-3747</p>
+            </div>
+            <div class="ubi">
 
-
-
-
-
-
-
-
-
-
-    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
-
-    <section class="contacto">
-        <h2>Contact Us</h2>
-        <div class="contact">
-            <p><strong>Email:</strong> contact@flyhigh.com</p>
-            <p><strong>Phone:</strong> +1 (800) 555-3747</p>
-        </div>
-        <div class="ubi">
-
-            <p><strong>Address:</strong>
-                <br>
-                Flyhigh Headquarters
-                <br>
-                123 Skyview Avenue, Suite 500
-                <br>
-                Miami, FL, USA
-            </p>
-            <p><strong>Business Hours:</strong>
-                <br>
-                Monday to Friday: 9:00 AM - 6:00 PM
-            </p>
-        </div>
-    </section>
+                <p><strong>Address:</strong>
+                    <br>
+                    Flyhigh Headquarters
+                    <br>
+                    123 Skyview Avenue, Suite 500
+                    <br>
+                    Miami, FL, USA
+                </p>
+                <p><strong>Business Hours:</strong>
+                    <br>
+                    Monday to Friday: 9:00 AM - 6:00 PM
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2025</p>
+    </footer>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 @import url("./global.css");
 
+/*Main styles*/
 body {
     background-image: url("../imgs/bg.jpg");
     background-size: cover;
@@ -13,6 +14,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/*Search bar*/
 .search-container {
     position: absolute;
     right: 20px;
@@ -121,6 +123,7 @@ h2 {
     }
 }
 
+/*Cards positions and animations*/
 .products {
     position: relative;
     width: 400px;

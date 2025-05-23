@@ -1,5 +1,6 @@
 @import url("./global.css");
 
+/*Main styles*/
 body {
     background-image: url("../imgs/bg.jpg");
     background-size: cover;
@@ -7,9 +8,18 @@ body {
     background-repeat: no-repeat;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
+h1,
+h2 {
+    color: var(--sec-text-color);
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+li {
+    color: var(--text-color);
 }
 
 .top {
@@ -27,6 +37,7 @@ footer {
     color: var(--sec-text-color);
 }
 
+/*Aside photo*/
 .aside-photo {
     float: right;
     margin-right: 100px;
@@ -39,6 +50,7 @@ footer {
 
 }
 
+/*About us*/
 details {
     margin: 10px 0;
     cursor: pointer;
@@ -76,11 +88,7 @@ details[open] .who {
     opacity: 1;
 }
 
-
-h1,
-h2 {
-    color: var(--sec-text-color);
-}
+/*Services*/
 
 .services {
     max-width: 100%;
@@ -94,14 +102,7 @@ h2 {
     color: var(--sec-text-color);
 }
 
-ul {
-    padding-left: 20px;
-    line-height: 1.6;
-}
 
-li {
-    color: var(--text-color);
-}
 
 /* MEDIAS QUERIES*/
 @media (max-width: 1300px) and (min-width: 300px) {
@@ -129,20 +130,6 @@ li {
         margin-top: 30px;
     }
 
-    /* 
-    .aside-photo {
-        float: none;
-        margin: 20px auto 0 auto;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .aside-photo>img {
-        width: 90vw;
-        height: auto;
-        max-width: 300px;
-    } */
 
     .services {
         margin-top: 30px;

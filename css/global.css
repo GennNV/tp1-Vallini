@@ -1,3 +1,4 @@
+/*Variables*/
 :root {
     --bg-color: #f4e8c1;
     --text-color: #374545;
@@ -6,6 +7,7 @@
     --secondary-color: #8FB8ED;
 }
 
+/*Header and footer*/
 header {
     position: sticky;
     top: 0;
@@ -13,6 +15,12 @@ header {
     backdrop-filter: blur(5px);
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+/*Buttons*/
 button {
     background-color: rgba(244, 232, 193, 0.8);
     color: var(--text-color);
@@ -30,7 +38,7 @@ button:hover {
     color: var(--text-color);
 }
 
-
+/*Global styles */
 body {
     margin: 0;
     padding: 0;
@@ -58,6 +66,11 @@ nav>ul {
     position: relative;
 }
 
+.logo-li,
+.spacer-li {
+    flex: 1;
+}
+
 nav>ul>li:hover {
     padding: 10px;
     border-radius: 30px;
@@ -66,11 +79,11 @@ nav>ul>li:hover {
     background-color: var(--secondary-color);
 }
 
-nav>ul>li:first-child {
+/* nav>ul>li:first-child {
     position: absolute;
     left: 20px;
 
-}
+} */
 
 nav>ul>li:first-child a {
     display: flex;

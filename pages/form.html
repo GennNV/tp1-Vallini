@@ -10,136 +10,145 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/"><img src="../imgs/logo.png" alt="logo">FlyHigh</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./form.html">Form</a></li>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
-    <h1 id="title">Looking for a flight?</h1>
-    <p id="description">* Required fields</p>
-    <form id="survey-form" method="get">
-        <fieldset>
-            <label id="nameLabel" for="name">Name *<input id="name" type="text" required
-                    placeholder="Enter your name" /></label>
-            <label id="emailLabel" for="email">Email *<input id="email" type="email" required
-                    placeholder="Enter your Email" /></label>
-            <label id="ageLabel" for="age">Age<input id="number" type="number" min="15" max="80"
-                    placeholder="Age" /></label>
-            <label id="phoneLabel" for="phone">Cell-phone<input id="phone" type="number"
-                    placeholder="Cell-phone" /></label>
-        </fieldset>
-        <fieldset>
-            <label id="dropdownLabel" for="dropdown">
-                What type of flight are you looking for? *
-                <select id="dropdown" name="flight" required>
-                    <option value="">Select an option</option>
-                    <option value="1">Local</option>
-                    <option value="2">National</option>
-                    <option value="3">International</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset>
-            <label for="radios" id="fTime">
-                <legend>Is your first time flying with us? *</legend>
-                <label for="yes"><input type="radio" name="recommend" id="yes" class="inline" checked value="yes"
-                        required>
-                    Yes</label>
-                <label for="no"><input type="radio" name="recommend" id="no" class="inline" value="no"
-                        required>No</label>
-        </fieldset>
+    <main>
+        <!-- Header -->
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo-li"><a href="/"><img src="../imgs/logo.png" alt="logo">FlyHigh</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./form.html">Form</a></li>
+                    <li class="spacer-li"></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+        <h1 id="title">Looking for a flight?</h1>
+        <p id="description">* Required fields</p>
+        <!-- Form -->
+        <form id="survey-form" method="get">
+            <!-- Personal information-->
+            <fieldset>
+                <label id="nameLabel" for="name">Name *<input id="name" type="text" required
+                        placeholder="Enter your name" /></label>
+                <label id="emailLabel" for="email">Email *<input id="email" type="email" required
+                        placeholder="Enter your Email" /></label>
+                <label id="ageLabel" for="age">Age<input id="number" type="number" min="15" max="80"
+                        placeholder="Age" /></label>
+                <label id="phoneLabel" for="phone">Cell-phone<input id="phone" type="number"
+                        placeholder="Cell-phone" /></label>
+            </fieldset>
+            <fieldset>
+                <label id="dropdownLabel" for="dropdown">
+                    What type of flight are you looking for? *
+                    <select id="dropdown" name="flight" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Local</option>
+                        <option value="2">National</option>
+                        <option value="3">International</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="radios" id="fTime">
+                    <legend>Is your first time flying with us? *</legend>
+                    <label for="yes"><input type="radio" name="recommend" id="yes" class="inline" checked value="yes"
+                            required>
+                        Yes</label>
+                    <label for="no"><input type="radio" name="recommend" id="no" class="inline" value="no"
+                            required>No</label>
+            </fieldset>
+            <!-- Booking information-->
+            <fieldset>
+                <label for="dropdown2">
+                    Select your plane *
+                    <select id="dropdown2" name="plane">
+                        <option value="">Select an option</option>
+                        <option value="1">Gulfstream G700</option>
+                        <option value="2">Cessna Citation Longitude</option>
+                        <option value="3">HondaJet Elite II</option>
+                        <option value="4">Dassault Falcon 8X</option>
+                    </select>
+                </label>
+                <label for="date">
+                    <legend>Select your departure date *</legend>
+                    <input type="date" id="date" name="date" required>
+                </label>
+                <label for="date2">
+                    <legend>Select your return date *</legend>
+                    <input type="date" id="date2" name="date2" required>
+                </label>
+                <label for="dep-country">
+                    <legend>Select your departure country *</legend>
+                    <select name="dep-country" id="dep-country" required>
+                        <option value="">Select an option</option>
+                        <option value="1">United States</option>
+                        <option value="2">Canada</option>
+                        <option value="3">Mexico</option>
+                        <option value="4">Brazil</option>
+                        <option value="5">Argentina</option>
+                        <option value="6">Chile</option>
+                        <option value="7">Colombia</option>
+                        <option value="8">Ecuador</option>
+                        <option value="9">Peru</option>
+                        <option value="10">Other</option>
+                    </select>
+                </label>
+                <label for="dep-city">
+                    <legend>Select your destination *</legend>
+                    <select name="dest-country" id="dest-country" required>
+                        <option value="">Select an option</option>
+                        <option value="1">United States</option>
+                        <option value="2">Canada</option>
+                        <option value="3">Mexico</option>
+                        <option value="4">Brazil</option>
+                        <option value="5">Argentina</option>
+                        <option value="6">Chile</option>
+                        <option value="7">Colombia</option>
+                        <option value="8">Ecuador</option>
+                        <option value="9">Peru</option>
+                        <option value="10">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <!-- Comments -->
+            <fieldset>
+                <label for="comm">Any comments or extra information we need to know?
+                    <textarea id="comm" name="comm" rows="6" cols="50"
+                        placeholder="Enter your comment here..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+        <!-- Contact Us -->
+        <section class="contacto">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <p><strong>Email:</strong> contact@flyhigh.com</p>
+                <p><strong>Phone:</strong> +1 (800) 555-3747</p>
+            </div>
+            <div class="ubi">
 
-        </label>
-        <fieldset>
-            <label for="dropdown2">
-                Select your plane *
-                <select id="dropdown2" name="plane">
-                    <option value="">Select an option</option>
-                    <option value="1">Gulfstream G700</option>
-                    <option value="2">Cessna Citation Longitude</option>
-                    <option value="3">HondaJet Elite II</option>
-                    <option value="4">Dassault Falcon 8X</option>
-                </select>
-            </label>
-            <label for="date">
-                <legend>Select your departure date *</legend>
-                <input type="date" id="date" name="date" required>
-            </label>
-            <label for="date2">
-                <legend>Select your return date *</legend>
-                <input type="date" id="date2" name="date2" required>
-            </label>
-            <label for="dep-country">
-                <legend>Select your departure country *</legend>
-                <select name="dep-country" id="dep-country" required>
-                    <option value="">Select an option</option>
-                    <option value="1">United States</option>
-                    <option value="2">Canada</option>
-                    <option value="3">Mexico</option>
-                    <option value="4">Brazil</option>
-                    <option value="5">Argentina</option>
-                    <option value="6">Chile</option>
-                    <option value="7">Colombia</option>
-                    <option value="8">Ecuador</option>
-                    <option value="9">Peru</option>
-                    <option value="10">Other</option>
-                </select>
-            </label>
-            <label for="dep-city">
-                <legend>Select your destination *</legend>
-                <select name="dest-country" id="dest-country" required>
-                    <option value="">Select an option</option>
-                    <option value="1">United States</option>
-                    <option value="2">Canada</option>
-                    <option value="3">Mexico</option>
-                    <option value="4">Brazil</option>
-                    <option value="5">Argentina</option>
-                    <option value="6">Chile</option>
-                    <option value="7">Colombia</option>
-                    <option value="8">Ecuador</option>
-                    <option value="9">Peru</option>
-                    <option value="10">Other</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset>
-            <label for="comm">Any comments or extra information we need to know?
-                <textarea id="comm" name="comm" rows="6" cols="50" placeholder="Enter your comment here..."></textarea>
-            </label>
-        </fieldset>
-        <input id="submit" type="submit" value="Submit" />
-    </form>
-    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
-
-    <section class="contacto">
-        <h2>Contact Us</h2>
-        <div class="contact">
-            <p><strong>Email:</strong> contact@flyhigh.com</p>
-            <p><strong>Phone:</strong> +1 (800) 555-3747</p>
-        </div>
-        <div class="ubi">
-
-            <p><strong>Address:</strong>
-                <br>
-                Flyhigh Headquarters
-                <br>
-                123 Skyview Avenue, Suite 500
-                <br>
-                Miami, FL, USA
-            </p>
-            <p><strong>Business Hours:</strong>
-                <br>
-                Monday to Friday: 9:00 AM - 6:00 PM
-            </p>
-        </div>
-    </section>
+                <p><strong>Address:</strong>
+                    <br>
+                    Flyhigh Headquarters
+                    <br>
+                    123 Skyview Avenue, Suite 500
+                    <br>
+                    Miami, FL, USA
+                </p>
+                <p><strong>Business Hours:</strong>
+                    <br>
+                    Monday to Friday: 9:00 AM - 6:00 PM
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2025</p>
+    </footer>
 </body>
 
 </html>
