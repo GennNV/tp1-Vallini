@@ -13,6 +13,89 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.search-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border-radius: 1000px;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    z-index: 0;
+    max-width: 300px;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search::after,
+.search::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    border-radius: inherit;
+    position: absolute;
+}
+
+.search::before {
+    top: -1px;
+    left: -1px;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.search::after {
+    bottom: -1px;
+    right: -1px;
+    background-color: transparent;
+    z-index: -2;
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    border: none;
+    color: var(--text-color);
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+}
+
+.search__icon {
+    width: 30px;
+    aspect-ratio: .5;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    padding-left: 12px;
+    margin-right: 10px;
+}
+
+.search__icon:hover {
+    border-left: 3px solid white;
+}
+
+.search__icon path {
+    fill: white;
+}
+
+
+
 /*Card*/
 @keyframes autoRun3d {
     from {
@@ -58,7 +141,6 @@ h2 {
     top: 50%;
     left: 50%;
     transform-origin: center center;
-    animation: animateBrightness 20s linear infinite;
     transition-duration: 200ms;
     will-change: transform, filter;
 }
@@ -132,7 +214,26 @@ h2 {
 }
 
 /* MEDIAS QUERIES*/
-@media (max-width: 600px) {
+@media (max-width: 820px) and (min-width: 300px) {
+    @media (max-width: 820px) and (min-width: 300px) {
+        .search .input {
+            display: none;
+            width: 0;
+            transition: width 0.3s;
+        }
+
+        .search__icon-label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-search:checked~.input {
+            display: block;
+            width: 100%;
+        }
+    }
+
     .productRow {
         flex-direction: column;
         align-items: center;

@@ -62,7 +62,7 @@ nav>ul>li:hover {
     padding: 10px;
     border-radius: 30px;
     transition: all 0.3s ease;
-    text-shadow: 0 0 10px var(--text-color);
+    text-shadow: 0 0 10px var(--bg-color);
     background-color: var(--secondary-color);
 }
 
@@ -136,7 +136,7 @@ img {
 
 
 /* MEDIAS QUERIES*/
-@media (max-width: 600px) {
+@media (max-width: 950px) and (min-width: 300px) {
     nav {
         flex-direction: column;
         height: auto;
