@@ -79,12 +79,6 @@ nav>ul>li:hover {
     background-color: var(--secondary-color);
 }
 
-/* nav>ul>li:first-child {
-    position: absolute;
-    left: 20px;
-
-} */
-
 nav>ul>li:first-child a {
     display: flex;
     align-items: center;

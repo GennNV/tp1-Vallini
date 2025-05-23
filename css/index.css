@@ -54,7 +54,6 @@ li {
 details {
     margin: 10px 0;
     cursor: pointer;
-
     background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 10px;
@@ -80,6 +79,10 @@ summary {
     opacity: 1;
 }
 
+details:hover {
+    transition: background-color 0.4s ease;
+    box-shadow: 0 0 10px rgba(244, 232, 193, 1);
+}
 
 details[open] .mis,
 details[open] .vis,
