@@ -78,7 +78,7 @@ h2 {
     background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
 }
 
-.search__icon {
+.search-icon {
     width: 30px;
     aspect-ratio: .5;
     border-top: 3px solid transparent;
@@ -89,11 +89,11 @@ h2 {
     cursor: pointer;
 }
 
-.search__icon:hover {
+.search-icon:hover {
     stroke: var(--bg-color);
 }
 
-.search__icon path {
+.search-icon path {
     fill: white;
 }
 
@@ -189,7 +189,7 @@ h2 {
     border-radius: 0.3rem;
 }
 
-.productRow {
+.product-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -197,7 +197,7 @@ h2 {
     padding: 2rem;
 }
 
-.productBox {
+.product-box {
     width: 450px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -206,21 +206,25 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.productBox h3 {
+.product-box h3 {
     color: #004080;
     margin-bottom: 1rem;
 }
 
-.productDesc {
-    margin-top: 1.5rem;
+.product-desc {
+    /* margin-top: 1.5rem; */
     font-size: 0.95rem;
     color: #333;
+    width: 80%;
+    height: 80px;
+    margin: 3rem auto -1.5rem auto;
 }
 
 .price {
     font-size: 1.2rem;
     font-weight: bold;
     color: #004080;
+
 }
 
 /* MEDIAS QUERIES*/
@@ -232,7 +236,7 @@ h2 {
             transition: width 0.3s;
         }
 
-        .search__icon-label {
+        .search-icon-label {
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -244,14 +248,14 @@ h2 {
         }
     }
 
-    .productRow {
+    .product-row {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
         padding: 1rem;
     }
 
-    .productBox {
+    .product-box {
         width: 95%;
         padding: 1rem;
     }
@@ -266,7 +270,7 @@ h2 {
         height: 120px;
     }
 
-    .productDesc {
+    .product-desc {
         font-size: 0.85rem;
         text-align: justify;
     }
