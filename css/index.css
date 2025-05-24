@@ -22,7 +22,7 @@ li {
     color: var(--text-color);
 }
 
-img {
+.aside-photo>img {
     border-radius: 80px 0px;
 }
 
