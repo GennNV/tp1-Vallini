@@ -86,6 +86,7 @@ h2 {
     border-radius: 50%;
     padding-left: 12px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .search__icon:hover {

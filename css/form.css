@@ -39,6 +39,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     background-color: rgba(244, 232, 193, 0.8);
+    border-radius: 10px;
 
 }
 
